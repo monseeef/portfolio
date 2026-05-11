@@ -3,7 +3,7 @@ Full-Stack Developer | React Native Specialist | UI/UX Designer
 
 Email: monsifelouarat@gmail.com
 GitHub: https://github.com/monseeef
-LinkedIn: https://linkedin.com/in/your-profile
+LinkedIn: https://www.linkedin.com/in/monsif-elouarat/
 
 Summary
 Building scalable MERN applications and high-performance mobile experiences with a design-first mindset.

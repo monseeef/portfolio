@@ -140,7 +140,7 @@ Screenshot placeholder: mobile responsive view
 
 - **Email:** monsifelouarat@gmail.com
 - **GitHub:** [github.com/monseeef](https://github.com/monseeef)
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **LinkedIn:** [linkedin.com/in/monsif-elouarat](https://www.linkedin.com/in/monsif-elouarat/)
 
 ## License
 

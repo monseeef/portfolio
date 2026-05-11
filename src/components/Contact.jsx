@@ -8,8 +8,8 @@ const email = 'monsifelouarat@gmail.com';
 const contactLinks = [
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/your-profile',
-    href: 'https://linkedin.com/in/your-profile',
+    value: 'linkedin.com/in/monsif-elouarat',
+    href: 'https://www.linkedin.com/in/monsif-elouarat/',
   },
   {
     label: 'GitHub',

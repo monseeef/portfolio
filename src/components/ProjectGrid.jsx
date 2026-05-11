@@ -8,8 +8,17 @@ const projects = [
       'Modular e-commerce platform focused on clean architecture, cart logic, and responsive product pages.',
     tech: ['React', 'Tailwind CSS', 'JavaScript'],
     githubUrl: '#',
-    demoUrl: '#',
+    demoUrl: 'https://audiophile-hng.netlify.app/',
     gradient: 'from-slate-800 via-emerald-950 to-slate-950',
+  },
+  {
+    title: 'Ticket App',
+    description:
+      'Modern React ticket management interface focused on responsive UI, component architecture, and smooth user experience.',
+    tech: ['React', 'Tailwind CSS', 'JavaScript'],
+    githubUrl: '#',
+    demoUrl: 'https://ticket-reactapp.netlify.app/',
+    gradient: 'from-slate-800 via-cyan-950 to-emerald-950',
   },
   {
     title: 'Athar App',
