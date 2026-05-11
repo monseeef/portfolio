@@ -28,7 +28,7 @@ function ExperienceTimeline() {
     <section
       id="experience"
       aria-labelledby="experience-title"
-      className="relative scroll-mt-28 py-20 sm:py-28"
+      className="relative scroll-mt-28 py-24 sm:py-32"
     >
       <motion.div
         className="mx-auto max-w-3xl text-center"
@@ -42,7 +42,7 @@ function ExperienceTimeline() {
         </p>
         <h2
           id="experience-title"
-          className="mt-4 text-3xl font-bold tracking-normal text-white sm:text-5xl"
+          className="mt-4 text-4xl font-bold tracking-normal text-white sm:text-5xl"
         >
           My professional journey building modern digital experiences.
         </h2>
@@ -72,7 +72,7 @@ function ExperienceTimeline() {
                 }}
               >
                 <div className={isLeft ? 'lg:col-start-1' : 'lg:col-start-3'}>
-                  <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-slate-950/30 backdrop-blur-md transition duration-300 hover:border-emerald-300/30">
+                  <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-[0_24px_80px_rgba(2,6,23,0.36)] backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:border-emerald-300/30 hover:shadow-[0_30px_100px_rgba(2,6,23,0.5)]">
                     <div className="absolute -right-20 -top-20 h-44 w-44 rounded-full bg-emerald-400/10 blur-3xl transition duration-500 group-hover:bg-emerald-400/20" />
 
                     <div className="relative">

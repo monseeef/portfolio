@@ -29,13 +29,13 @@ function Navbar() {
 
   return (
     <motion.header
-      className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6"
+      className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4"
       initial={{ y: -28, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
     >
       <nav
-        className="mx-auto flex w-full max-w-4xl items-center justify-center rounded-full border border-white/10 bg-slate-900/70 px-3 py-3 shadow-2xl shadow-slate-950/30 backdrop-blur-md sm:justify-between sm:px-6"
+        className="mx-auto flex w-full max-w-4xl items-center justify-center rounded-full border border-white/10 bg-slate-900/75 px-2.5 py-2.5 shadow-[0_18px_60px_rgba(2,6,23,0.45)] backdrop-blur-md sm:justify-between sm:px-6 sm:py-3"
         aria-label="Primary navigation"
       >
         <a
@@ -55,7 +55,7 @@ function Navbar() {
                 key={link}
                 href={`#${sectionId}`}
                 aria-current={isActive ? 'page' : undefined}
-                className={`group relative shrink-0 rounded-full px-2 py-2 text-xs font-medium transition duration-300 focus:outline-none focus-visible:bg-emerald-400/10 focus-visible:text-emerald-300 sm:px-4 sm:text-sm ${
+                className={`group relative shrink-0 rounded-full px-2 py-2 text-[0.7rem] font-medium transition duration-300 focus:outline-none focus-visible:bg-emerald-400/10 focus-visible:text-emerald-300 sm:px-4 sm:text-sm ${
                   isActive
                     ? 'bg-emerald-400/10 text-emerald-300'
                     : 'text-slate-300 hover:bg-emerald-400/10 hover:text-emerald-300'

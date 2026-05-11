@@ -21,7 +21,7 @@ const skillGroups = [
 
 function Skills() {
   return (
-    <section id="about" aria-labelledby="skills-title" className="relative scroll-mt-28 py-20 sm:py-28">
+    <section id="about" aria-labelledby="skills-title" className="relative scroll-mt-28 py-24 sm:py-32">
       <motion.div
         aria-hidden="true"
         className="absolute left-1/2 top-24 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-400/10 blur-3xl"
@@ -39,7 +39,7 @@ function Skills() {
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
           About
         </p>
-        <h2 id="skills-title" className="mt-4 text-3xl font-bold tracking-normal text-white sm:text-5xl">
+        <h2 id="skills-title" className="mt-4 text-4xl font-bold tracking-normal text-white sm:text-5xl">
           Tech Stack
         </h2>
         <p className="mt-5 text-base leading-8 text-slate-300">
@@ -51,7 +51,7 @@ function Skills() {
         {skillGroups.map((group, index) => (
           <motion.article
             key={group.title}
-            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-slate-950/30 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-emerald-300/30"
+            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-[0_24px_80px_rgba(2,6,23,0.36)] backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:border-emerald-300/30 hover:shadow-[0_30px_100px_rgba(2,6,23,0.5)]"
             initial={{ y: 28, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}

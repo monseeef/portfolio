@@ -1,10 +1,11 @@
 import { Code2, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import MagneticButton from './MagneticButton.jsx';
 
 function ProjectCard({ project, index }) {
   return (
     <motion.article
-      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-2xl shadow-slate-950/30 backdrop-blur-md"
+      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-[0_24px_80px_rgba(2,6,23,0.38)] backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:border-emerald-300/25 hover:shadow-[0_30px_100px_rgba(2,6,23,0.5)]"
       initial={{ y: 28, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, amount: 0.28 }}
@@ -43,22 +44,22 @@ function ProjectCard({ project, index }) {
         </ul>
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a
+          <MagneticButton
             href={project.githubUrl}
             aria-label={`View ${project.title} on GitHub`}
             className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-100 transition duration-300 hover:border-emerald-300/50 hover:bg-emerald-300/10 hover:text-emerald-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             <Code2 aria-hidden="true" size={17} />
             GitHub
-          </a>
-          <a
+          </MagneticButton>
+          <MagneticButton
             href={project.demoUrl}
             aria-label={`Open ${project.title} live demo`}
-            className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-300 px-4 py-2.5 text-sm font-semibold text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-300 px-4 py-2.5 text-sm font-semibold text-slate-950 transition duration-300 hover:shadow-lg hover:shadow-emerald-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             <ExternalLink aria-hidden="true" size={17} />
             Live Demo
-          </a>
+          </MagneticButton>
         </div>
       </div>
     </motion.article>

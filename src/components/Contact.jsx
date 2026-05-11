@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Check, Copy, ExternalLink, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
+import MagneticButton from './MagneticButton.jsx';
 
 const email = 'monsifelouarat@gmail.com';
 
@@ -31,7 +32,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" aria-labelledby="contact-title" className="relative scroll-mt-28 py-20 sm:py-28">
+    <section id="contact" aria-labelledby="contact-title" className="relative scroll-mt-28 py-24 sm:py-32">
       <motion.div
         aria-hidden="true"
         className="absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/12 blur-3xl sm:h-[30rem] sm:w-[30rem]"
@@ -40,7 +41,7 @@ function Contact() {
       />
 
       <motion.div
-        className="mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-6 text-center shadow-2xl shadow-slate-950/40 backdrop-blur-md sm:p-10 lg:p-12"
+        className="mx-auto max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-slate-900/60 p-6 text-center shadow-[0_30px_110px_rgba(2,6,23,0.48)] backdrop-blur-md sm:p-10 lg:p-12"
         initial={{ y: 28, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.35 }}
@@ -50,7 +51,7 @@ function Contact() {
           <Mail aria-hidden="true" size={22} />
         </div>
 
-        <h2 id="contact-title" className="mt-6 text-3xl font-bold tracking-normal text-white sm:text-5xl">
+        <h2 id="contact-title" className="mt-6 text-4xl font-bold tracking-normal text-white sm:text-5xl">
           Let&apos;s build something great
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300">
@@ -71,21 +72,22 @@ function Contact() {
                 {email}
               </a>
             </div>
-            <button
+            <MagneticButton
+              as={motion.button}
               type="button"
               onClick={handleCopyEmail}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-300 px-5 py-2.5 text-sm font-semibold text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-300 px-5 py-2.5 text-sm font-semibold text-slate-950 transition duration-300 hover:shadow-lg hover:shadow-emerald-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               aria-live="polite"
             >
               {copied ? <Check aria-hidden="true" size={17} /> : <Copy aria-hidden="true" size={17} />}
               {copied ? 'Copied' : 'Copy Email'}
-            </button>
+            </MagneticButton>
           </div>
 
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {contactLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <MagneticButton
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
@@ -97,7 +99,7 @@ function Contact() {
                     <span className="mt-1 block text-xs text-slate-400">{link.value}</span>
                   </span>
                   <ExternalLink aria-hidden="true" size={17} className="shrink-0" />
-                </a>
+                </MagneticButton>
               </li>
             ))}
           </ul>

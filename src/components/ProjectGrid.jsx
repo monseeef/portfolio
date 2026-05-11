@@ -33,7 +33,7 @@ const projects = [
 
 function ProjectGrid() {
   return (
-    <section id="projects" aria-labelledby="projects-title" className="scroll-mt-28 py-20 sm:py-28">
+    <section id="projects" aria-labelledby="projects-title" className="scroll-mt-28 py-24 sm:py-32">
       <motion.div
         className="mx-auto max-w-3xl text-center"
         initial={{ y: 18, opacity: 0 }}
@@ -44,7 +44,7 @@ function ProjectGrid() {
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
           Selected Work
         </p>
-        <h2 id="projects-title" className="mt-4 text-3xl font-bold tracking-normal text-white sm:text-5xl">
+        <h2 id="projects-title" className="mt-4 text-4xl font-bold tracking-normal text-white sm:text-5xl">
           Projects built with clarity and polish
         </h2>
         <p className="mt-5 text-base leading-8 text-slate-300">

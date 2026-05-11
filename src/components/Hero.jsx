@@ -1,8 +1,16 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Download } from 'lucide-react';
 import { motion } from 'framer-motion';
+import MagneticButton from './MagneticButton.jsx';
 
 const roles = ['Full-Stack Developer', 'React Native Specialist', 'UI/UX Designer'];
+const particles = Array.from({ length: 12 }, (_, index) => ({
+  id: index,
+  left: `${8 + ((index * 17) % 84)}%`,
+  top: `${14 + ((index * 23) % 68)}%`,
+  delay: index * 0.35,
+  duration: 5 + (index % 4),
+}));
 
 function useTypewriter(words) {
   const [wordIndex, setWordIndex] = useState(0);
@@ -66,7 +74,7 @@ function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative isolate flex min-h-[calc(100vh-12rem)] items-center overflow-hidden py-12 sm:py-20"
+      className="relative isolate flex min-h-[calc(100vh-10rem)] items-center overflow-hidden py-14 sm:py-24"
     >
       <div className="absolute inset-0 -z-20 bg-slate-950" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(148,163,184,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.08)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black,transparent_72%)]" />
@@ -82,6 +90,21 @@ function Hero() {
         animate={{ y: [0, 18, 0], opacity: [0.18, 0.28, 0.18] }}
         transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
       />
+      {particles.map((particle) => (
+        <motion.span
+          key={particle.id}
+          aria-hidden="true"
+          className="absolute -z-10 h-1 w-1 rounded-full bg-emerald-200/40 shadow-[0_0_18px_rgba(110,231,183,0.55)]"
+          style={{ left: particle.left, top: particle.top }}
+          animate={{ y: [0, -18, 0], opacity: [0.18, 0.5, 0.18], scale: [1, 1.25, 1] }}
+          transition={{
+            duration: particle.duration,
+            delay: particle.delay,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+        />
+      ))}
 
       <motion.div
         className="w-full max-w-4xl"
@@ -98,7 +121,9 @@ function Hero() {
 
         <motion.h1
           id="hero-title"
-          className="mt-8 max-w-4xl text-5xl font-bold tracking-normal text-white sm:text-7xl lg:text-8xl"
+          className="mt-8 max-w-5xl bg-gradient-to-r from-white via-emerald-100 to-teal-300 bg-[length:180%_180%] bg-clip-text text-5xl font-bold tracking-normal text-transparent sm:text-7xl lg:text-8xl"
+          animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
+          transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
           variants={itemVariants}
         >
           Monsif El Ouarat
@@ -121,20 +146,20 @@ function Hero() {
         </motion.p>
 
         <motion.div className="mt-10 flex flex-col gap-4 sm:flex-row" variants={itemVariants}>
-          <a
+          <MagneticButton
             href="#projects"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-400 to-teal-300 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-950/30 transition duration-300 hover:-translate-y-0.5 hover:shadow-emerald-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-400 via-emerald-300 to-teal-300 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_18px_45px_rgba(16,185,129,0.18)] transition duration-300 hover:shadow-[0_22px_60px_rgba(16,185,129,0.28)] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             View Projects
-          </a>
-          <a
+          </MagneticButton>
+          <MagneticButton
             href="/monsif-el-ouarat-cv.txt"
             download="Monsif-El-Ouarat-CV.txt"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 backdrop-blur-md transition duration-300 hover:-translate-y-0.5 hover:border-emerald-300/50 hover:bg-emerald-300/10 hover:text-emerald-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 shadow-[0_18px_45px_rgba(2,6,23,0.35)] backdrop-blur-md transition duration-300 hover:border-emerald-300/50 hover:bg-emerald-300/10 hover:text-emerald-200 hover:shadow-[0_22px_60px_rgba(16,185,129,0.12)] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             <Download aria-hidden="true" size={18} strokeWidth={2} />
             Download CV
-          </a>
+          </MagneticButton>
         </motion.div>
       </motion.div>
     </section>
