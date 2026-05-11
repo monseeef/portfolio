@@ -1,0 +1,15 @@
+Monsif El Ouarat
+Full-Stack Developer | React Native Specialist | UI/UX Designer
+
+Email: monsifelouarat@gmail.com
+GitHub: https://github.com/monseeef
+LinkedIn: https://linkedin.com/in/your-profile
+
+Summary
+Building scalable MERN applications and high-performance mobile experiences with a design-first mindset.
+
+Tech Stack
+Frontend: React, JavaScript, TypeScript, Tailwind CSS, Vite
+Backend: Node.js, Express.js, MongoDB, REST APIs, JWT
+Mobile: React Native, Expo, Expo Router
+Design: Figma, Adobe Illustrator, UI/UX Design, Responsive Design
