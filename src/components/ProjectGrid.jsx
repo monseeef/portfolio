@@ -1,42 +1,62 @@
-import { motion } from 'framer-motion';
-import ProjectCard from './ProjectCard.jsx';
+import { motion } from "framer-motion";
+import audiophileImage from "../assets/projects/audiophile.png";
+import ticketAppImage from "../assets/projects/ticket-app.png";
+import ProjectCard from "./ProjectCard.jsx";
 
 const projects = [
   {
-    title: 'Audiophile',
+    title: "Audiophile",
     description:
-      'Modular e-commerce platform focused on clean architecture, cart logic, and responsive product pages.',
-    tech: ['React', 'Tailwind CSS', 'JavaScript'],
-    githubUrl: '#',
-    demoUrl: 'https://audiophile-hng.netlify.app/',
-    gradient: 'from-slate-800 via-emerald-950 to-slate-950',
+      "Production-style e-commerce interface demonstrating reusable React architecture, cart state management, responsive product pages, and polished conversion-focused UI.",
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    image: audiophileImage,
+    imageAlt: "Audiophile e-commerce homepage screenshot",
+    githubUrl: "https://github.com/monseeef/audiophile",
+    demoUrl: "https://audiophile-hng.netlify.app/",
+    gradient: "from-slate-800 via-emerald-950 to-slate-950",
   },
   {
-    title: 'Ticket App',
+    title: "Pet Store E-commerce",
     description:
-      'Modern React ticket management interface focused on responsive UI, component architecture, and smooth user experience.',
-    tech: ['React', 'Tailwind CSS', 'JavaScript'],
-    githubUrl: '#',
-    demoUrl: 'https://ticket-reactapp.netlify.app/',
-    gradient: 'from-slate-800 via-cyan-950 to-emerald-950',
+      "Modern full-stack pet ecommerce platform built with the MERN stack, featuring a premium storefront experience, secure authentication, Stripe checkout integration, wishlist/cart flows, responsive admin dashboard, and production deployment with MongoDB Atlas, Render, and Vercel.",
+    tech: [
+      "React",
+      "Express",
+      "Node.js",
+      "MongoDB Atlas",
+      "Stripe",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Vercel",
+      "Render",
+    ],
+    image: "",
+    imageAlt: "Pet Store E-commerce project preview",
+    githubUrl: "https://github.com/monseeef/pet-store-ecommerce",
+    demoUrl: "https://petopia-store.vercel.app/",
+    gradient: "from-slate-800 via-cyan-950 to-slate-950",
   },
   {
-    title: 'Athar App',
+    title: "Ticket App",
     description:
-      'React Native mobile app focused on routines, spiritual consistency, Expo Router navigation, and clean mobile UX.',
-    tech: ['React Native', 'Expo Router', 'TypeScript'],
-    githubUrl: '#',
-    demoUrl: '#',
-    gradient: 'from-slate-800 via-teal-950 to-emerald-950',
+      "Customer support ticket dashboard built with responsive React components, clear information hierarchy, and a smooth workflow-oriented user experience.",
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    image: ticketAppImage,
+    imageAlt: "Ticket App landing page screenshot",
+    githubUrl: "https://github.com/monseeef/Tickets-react-app",
+    demoUrl: "https://ticket-reactapp.netlify.app/",
+    gradient: "from-slate-800 via-cyan-950 to-emerald-950",
   },
   {
-    title: 'Pet Store E-commerce',
+    title: "Athar App",
     description:
-      'Full-stack MERN e-commerce app with authentication, products, cart flow, and backend API integration.',
-    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-    githubUrl: '#',
-    demoUrl: '#',
-    gradient: 'from-slate-800 via-cyan-950 to-slate-950',
+      "React Native mobile experience focused on habit consistency, Expo Router navigation, clean screen architecture, and a calm mobile-first UX.",
+    tech: ["React Native", "Expo Router", "TypeScript"],
+    image: "",
+    imageAlt: "Athar App project preview",
+    githubUrl: "",
+    demoUrl: "",
+    gradient: "from-slate-800 via-teal-950 to-emerald-950",
   },
 ];
 
@@ -50,15 +70,12 @@ function ProjectGrid() {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       >
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
-          Selected Work
-        </p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">Selected Work</p>
         <h2 id="projects-title" className="mt-4 text-4xl font-bold tracking-normal text-white sm:text-5xl">
           Projects built with clarity and polish
         </h2>
         <p className="mt-5 text-base leading-8 text-slate-300">
-          Practical applications shaped around clean implementation, thoughtful
-          user flows, and responsive interfaces.
+          Practical applications shaped around clean implementation, thoughtful user flows, and responsive interfaces.
         </p>
       </motion.div>
 

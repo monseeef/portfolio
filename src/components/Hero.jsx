@@ -153,8 +153,8 @@ function Hero() {
             View Projects
           </MagneticButton>
           <MagneticButton
-            href="/monsif-el-ouarat-cv.txt"
-            download="Monsif-El-Ouarat-CV.txt"
+            href="/Monsif-El-Ouarat-CV.pdf"
+            download="Monsif-El-Ouarat-CV.pdf"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 shadow-[0_18px_45px_rgba(2,6,23,0.35)] backdrop-blur-md transition duration-300 hover:border-emerald-300/50 hover:bg-emerald-300/10 hover:text-emerald-200 hover:shadow-[0_22px_60px_rgba(16,185,129,0.12)] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             <Download aria-hidden="true" size={18} strokeWidth={2} />
