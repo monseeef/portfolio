@@ -1,4 +1,4 @@
-# Monsif El Ouarat Portfolio
+﻿# Monsif El Ouarat Portfolio
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -89,35 +89,35 @@ For Vercel or Netlify, import the repository, keep the default Vite settings, an
 
 ```text
 portfolio/
-├── public/
-│   ├── favicon.svg
-│   ├── monsif-el-ouarat-cv.txt
-│   └── og-image.svg
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── Contact.jsx
-│   │   ├── ExperienceTimeline.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── MagneticButton.jsx
-│   │   ├── MouseGlow.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── ProjectCard.jsx
-│   │   ├── ProjectGrid.jsx
-│   │   ├── ScrollProgress.jsx
-│   │   └── Skills.jsx
-│   ├── hooks/
-│   ├── layouts/
-│   │   └── Layout.jsx
-│   ├── pages/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+â”œâ”€â”€ public/
+â”‚   â”œâ”€â”€ favicon.svg
+â”‚   â”œâ”€â”€ Monsif-El-Ouarat-CV.pdf
+â”‚   â””â”€â”€ og-image.svg
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ assets/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ Contact.jsx
+â”‚   â”‚   â”œâ”€â”€ ExperienceTimeline.jsx
+â”‚   â”‚   â”œâ”€â”€ Footer.jsx
+â”‚   â”‚   â”œâ”€â”€ Hero.jsx
+â”‚   â”‚   â”œâ”€â”€ MagneticButton.jsx
+â”‚   â”‚   â”œâ”€â”€ MouseGlow.jsx
+â”‚   â”‚   â”œâ”€â”€ Navbar.jsx
+â”‚   â”‚   â”œâ”€â”€ ProjectCard.jsx
+â”‚   â”‚   â”œâ”€â”€ ProjectGrid.jsx
+â”‚   â”‚   â”œâ”€â”€ ScrollProgress.jsx
+â”‚   â”‚   â””â”€â”€ Skills.jsx
+â”‚   â”œâ”€â”€ hooks/
+â”‚   â”œâ”€â”€ layouts/
+â”‚   â”‚   â””â”€â”€ Layout.jsx
+â”‚   â”œâ”€â”€ pages/
+â”‚   â”œâ”€â”€ App.jsx
+â”‚   â”œâ”€â”€ index.css
+â”‚   â””â”€â”€ main.jsx
+â”œâ”€â”€ index.html
+â”œâ”€â”€ package.json
+â”œâ”€â”€ vite.config.js
+â””â”€â”€ README.md
 ```
 
 ## Screenshots
@@ -145,3 +145,5 @@ Screenshot placeholder: mobile responsive view
 ## License
 
 This project is intended as a personal portfolio. Add a license if you plan to distribute or reuse it publicly.
+
+

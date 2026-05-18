@@ -1,15 +1,16 @@
-Monsif El Ouarat
-Full-Stack Developer | React Native Specialist | UI/UX Designer
+﻿Monsif El Ouarat
+Junior Full-Stack Developer | MERN Stack | React Native / Expo
 
 Email: monsifelouarat@gmail.com
 GitHub: https://github.com/monseeef
 LinkedIn: https://www.linkedin.com/in/monsif-elouarat/
 
 Summary
-Building scalable MERN applications and high-performance mobile experiences with a design-first mindset.
+Junior Full-Stack Developer building MERN Stack web apps, React Native / Expo mobile experiences, AI SaaS projects, and modern UI/UX.
 
 Tech Stack
 Frontend: React, JavaScript, TypeScript, Tailwind CSS, Vite
 Backend: Node.js, Express.js, MongoDB, REST APIs, JWT
 Mobile: React Native, Expo, Expo Router
 Design: Figma, Adobe Illustrator, UI/UX Design, Responsive Design
+

@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useState } from 'react';
+﻿import { useEffect, useMemo, useState } from 'react';
 import { Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import MagneticButton from './MagneticButton.jsx';
 
-const roles = ['Full-Stack Developer', 'React Native Specialist', 'UI/UX Designer'];
+const roles = ['Junior Full-Stack Developer', 'MERN Stack Developer', 'React Native / Expo Developer'];
 const particles = Array.from({ length: 12 }, (_, index) => ({
   id: index,
   left: `${8 + ((index * 17) % 84)}%`,
@@ -116,7 +116,7 @@ function Hero() {
           className="inline-flex rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-emerald-200 shadow-lg shadow-emerald-950/20 backdrop-blur"
           variants={itemVariants}
         >
-          MERN &bull; React Native &bull; UI/UX
+          MERN Stack &bull; React Native / Expo &bull; AI SaaS
         </motion.p>
 
         <motion.h1
@@ -141,8 +141,7 @@ function Hero() {
           className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
           variants={itemVariants}
         >
-          Building scalable MERN applications and high-performance mobile
-          experiences with a design-first mindset.
+          Junior Full-Stack Developer building MERN Stack web apps, React Native / Expo mobile experiences, AI SaaS projects, and modern UI/UX.
         </motion.p>
 
         <motion.div className="mt-10 flex flex-col gap-4 sm:flex-row" variants={itemVariants}>
@@ -167,3 +166,5 @@ function Hero() {
 }
 
 export default Hero;
+
+

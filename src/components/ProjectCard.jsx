@@ -1,10 +1,11 @@
-import { Code2, ExternalLink } from 'lucide-react';
+﻿import { Code2, ExternalLink, LayoutDashboard } from 'lucide-react';
 import { motion } from 'framer-motion';
 import MagneticButton from './MagneticButton.jsx';
 
 function ProjectCard({ project, index }) {
   const githubIsExternal = project.githubUrl?.startsWith('http');
   const demoIsExternal = project.demoUrl?.startsWith('http');
+  const adminIsExternal = project.adminUrl?.startsWith('http');
 
   return (
     <motion.article
@@ -58,7 +59,7 @@ function ProjectCard({ project, index }) {
           ))}
         </ul>
 
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           {githubIsExternal ? (
             <MagneticButton
               href={project.githubUrl}
@@ -93,6 +94,19 @@ function ProjectCard({ project, index }) {
               <ExternalLink aria-hidden="true" size={17} />
               Live Demo
             </span>
+          )}
+
+          {adminIsExternal && (
+            <MagneticButton
+              href={project.adminUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${project.title} admin dashboard`}
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2.5 text-sm font-semibold text-emerald-100 transition duration-300 hover:border-emerald-300/50 hover:bg-emerald-300/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >
+              <LayoutDashboard aria-hidden="true" size={17} />
+              Admin Dashboard
+            </MagneticButton>
           )}
         </div>
       </div>

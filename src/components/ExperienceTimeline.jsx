@@ -1,24 +1,26 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 
 const experiences = [
   {
     company: 'HNG Internship',
-    role: 'Frontend Developer Intern',
-    date: '2024',
+    role: 'MERN Developer Intern',
+    date: 'September 2025 - December 2025',
+    location: 'Nigeria · Remote',
     achievements: [
-      'Built responsive UI components with React',
-      'Collaborated in agile team workflows',
-      'Improved frontend performance and accessibility',
+      'Built MERN stack features across responsive frontend interfaces and backend API workflows',
+      'Collaborated in remote agile team workflows with clear delivery milestones',
+      'Improved application usability, frontend performance, and accessibility',
     ],
   },
   {
     company: 'Ark-X',
-    role: 'UI/UX & Frontend Developer',
-    date: '2025',
+    role: 'MERN Developer Intern',
+    date: 'January 2024 - July 2024',
+    location: 'Casablanca',
     achievements: [
-      'Designed clean user-focused interfaces in Figma',
-      'Developed scalable frontend layouts',
-      'Improved UX consistency across multiple screens',
+      'Developed MERN stack application features with scalable frontend layouts',
+      'Designed clean user-focused interfaces and interaction flows in Figma',
+      'Improved UX consistency across multiple screens and responsive states',
     ],
   },
 ];
@@ -83,6 +85,9 @@ function ExperienceTimeline() {
                           </h3>
                           <p className="mt-2 text-sm font-medium text-emerald-300">
                             {experience.role}
+                          </p>
+                          <p className="mt-1 text-xs font-medium text-slate-400">
+                            {experience.location}
                           </p>
                         </div>
                         <time

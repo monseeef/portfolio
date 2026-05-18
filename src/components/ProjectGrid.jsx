@@ -1,9 +1,32 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import audiophileImage from "../assets/projects/audiophile.png";
 import ticketAppImage from "../assets/projects/ticket-app.png";
 import ProjectCard from "./ProjectCard.jsx";
 
 const projects = [
+  {
+    title: "ContentFlow AI",
+    description:
+      "AI SaaS content workflow platform positioned around faster ideation, clean user flows, and practical automation for creators and small teams.",
+    tech: ["MERN Stack", "React", "Node.js", "AI SaaS", "Tailwind CSS"],
+    image: "",
+    imageAlt: "ContentFlow AI project preview",
+    githubUrl: "",
+    demoUrl: "",
+    gradient: "from-slate-800 via-emerald-950 to-cyan-950",
+  },
+  {
+    title: "Petopia — MERN Pet E-commerce Platform",
+    description:
+      "Production-ready MERN pet commerce platform with customer storefront, admin dashboard, authentication, product management, cart and checkout flows, and deployed full-stack infrastructure.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Redux Toolkit", "Stripe", "Vercel"],
+    image: "",
+    imageAlt: "Petopia MERN pet e-commerce platform preview",
+    githubUrl: "https://github.com/monseeef/pawmerce-mern-ecommerce",
+    demoUrl: "https://petopia-store.vercel.app",
+    adminUrl: "https://petopia-store-admin.vercel.app",
+    gradient: "from-slate-800 via-cyan-950 to-slate-950",
+  },
   {
     title: "Audiophile",
     description:
@@ -16,47 +39,15 @@ const projects = [
     gradient: "from-slate-800 via-emerald-950 to-slate-950",
   },
   {
-    title: "Pet Store E-commerce",
-    description:
-      "Modern full-stack pet ecommerce platform built with the MERN stack, featuring a premium storefront experience, secure authentication, Stripe checkout integration, wishlist/cart flows, responsive admin dashboard, and production deployment with MongoDB Atlas, Render, and Vercel.",
-    tech: [
-      "React",
-      "Express",
-      "Node.js",
-      "MongoDB Atlas",
-      "Stripe",
-      "Tailwind CSS",
-      "Redux Toolkit",
-      "Vercel",
-      "Render",
-    ],
-    image: "",
-    imageAlt: "Pet Store E-commerce project preview",
-    githubUrl: "https://github.com/monseeef/pet-store-ecommerce",
-    demoUrl: "https://petopia-store.vercel.app/",
-    gradient: "from-slate-800 via-cyan-950 to-slate-950",
-  },
-  {
     title: "Ticket App",
     description:
-      "Customer support ticket dashboard built with responsive React components, clear information hierarchy, and a smooth workflow-oriented user experience.",
+      "Responsive ticket management interface with clear component architecture, clean information hierarchy, and a smooth workflow-oriented user experience.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
     image: ticketAppImage,
     imageAlt: "Ticket App landing page screenshot",
     githubUrl: "https://github.com/monseeef/Tickets-react-app",
     demoUrl: "https://ticket-reactapp.netlify.app/",
     gradient: "from-slate-800 via-cyan-950 to-emerald-950",
-  },
-  {
-    title: "Athar App",
-    description:
-      "React Native mobile experience focused on habit consistency, Expo Router navigation, clean screen architecture, and a calm mobile-first UX.",
-    tech: ["React Native", "Expo Router", "TypeScript"],
-    image: "",
-    imageAlt: "Athar App project preview",
-    githubUrl: "",
-    demoUrl: "",
-    gradient: "from-slate-800 via-teal-950 to-emerald-950",
   },
 ];
 
